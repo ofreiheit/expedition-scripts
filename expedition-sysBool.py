@@ -23,7 +23,7 @@ def get_dll_location():
     except WindowsError:
         return None
 dll_location = get_dll_location()
-    git rebase -i HEAD~4
+
 expedition = windll.LoadLibrary(dll_location +'\ExpDLL.dll')
 
 def get_sys_bool(sys_channel, boat_id): 
