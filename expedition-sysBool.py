@@ -29,7 +29,6 @@ expedition = windll.LoadLibrary(dll_location +'\ExpDLL.dll')
 def get_sys_bool(sys_channel, boat_id): 
     results_bool = c_bool()
     expedition.GetSysBool(c_short(sys_channel.value), pointer(results_bool))
-    print (str(results_bool.value))
     return results_bool.value
 i = 0
 i = i+1
@@ -38,4 +37,4 @@ results_bool = {}
 
 for channel in SystemBoolean:
     results_bool[channel.name] = get_sys_bool(channel, boat_id)
-    print (results_bool)
+print (results_bool)
