@@ -7,10 +7,10 @@ import json
 import psutil
 
 class SystemBoolean(Enum):
-    UTC = 2
-    Mag = 4
-    Quit = 24
-    UserFlag = 44
+    UTC = 1
+    Mag = 3
+    Quit = 23
+    UserFlag = 41
 
 REG_PATH = 'SOFTWARE\Expedition\Core'
 def get_dll_location():
